@@ -62,20 +62,30 @@ public class MainActivity extends AppCompatActivity {
     Add 3 points to team B's score with this method
     * */
     public void addThreeForTeamB(View view) {
-        displayForTeamA(3);
+        displayForTeamB(3);
     }
 
     /*
         Add 2 points to team B's score with this method
         * */
     public void addTwoForTeamB(View view) {
-        displayForTeamA(2);
+        displayForTeamB(2);
     }
 
     /*
     Add 2 points to team B's score with this method
     * */
     public void addOneForTeamB(View view) {
-        displayForTeamA(1);
+        displayForTeamB(1);
+    }
+
+    /*
+    Reset both teams' scores
+    * */
+    public void resetScore(View view) {
+        scoreTeamA = 0;
+        scoreTeamB = 0;
+        displayForTeamA(scoreTeamA);
+        displayForTeamB(scoreTeamB);
     }
 }
